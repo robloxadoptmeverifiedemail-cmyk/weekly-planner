@@ -6,9 +6,14 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public"))); // serve frontend files
 
 const DATA_FILE = path.join(__dirname, "data.json");
+
+// Root route fallback
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 // Load data
 app.get("/data", (req, res) => {
