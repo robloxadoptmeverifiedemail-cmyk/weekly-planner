@@ -1,0 +1,2082 @@
+{
+  "Monday": [
+    {
+      "subject": "History",
+      "type": "study",
+      "homework": "",
+      "study": "1",
+      "completed": false
+    }
+  ],
+  "Tuesday": [],
+  "Wednesday": [],
+  "Thursday": [],
+  "Friday": [],
+  "2025-10-06": {
+    "Monday": {
+      "History": "study"
+    }
+  },
+  "2025-10-13": {
+    "Monday": {
+      "History": "study"
+    },
+    "Tuesday": {
+      "IT": "hola"
+    }
+  },
+  "2025-10-20": {},
+  "2025-10-27": {},
+  "2025-11-03": {},
+  "2025-11-10": {},
+  "2025-11-17": {
+    "Wednesday": {
+      "English": "abonati"
+    }
+  },
+  "2025-11-24": {},
+  "2025-12-01": {},
+  "2025-12-08": {},
+  "2025-12-15": {},
+  "2025-12-22": {},
+  "2025-12-29": {},
+  "2026-01-05": {},
+  "2026-01-12": {},
+  "2026-01-19": {},
+  "2026-01-26": {},
+  "2026-02-02": {},
+  "2026-02-09": {},
+  "2026-02-16": {},
+  "2026-02-23": {},
+  "2026-03-02": {},
+  "2026-03-09": {},
+  "06.10": {
+    "Monday": {
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      },
+      "Biology": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      }
+    },
+    "Wednesday": {
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      }
+    },
+    "Friday": {
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false
+      }
+    }
+  },
+  "13.10": {
+    "Monday": {
+      "History": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true
+      },
+      "Biology": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": true
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "1 ex from SB",
+        "completed": true
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      }
+    },
+    "Tuesday": {
+      "Programming": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "spoken hw abt advice",
+        "completed": true
+      },
+      "Literature": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "how's robinson saved; table of 5 scenarios about bad & good things",
+        "completed": true,
+        "test": "no"
+      },
+      "IT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "1 page wb",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      },
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      },
+      "Spanish": {
+        "type": "both",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      }
+    },
+    "Thursday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true
+      },
+      "Bulgarian": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "do the test",
+        "completed": true
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "2 ex from SB + 1 extra",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "ex 1 to 5",
+        "completed": true
+      },
+      "Geography": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": true
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "homework",
+        "lessons": "2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "both",
+        "lessons": "2",
+        "homework": "graph",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "29.09": {},
+  "20.10": {
+    "Tuesday": {
+      "Programming": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Literature": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "prepare for test",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Monday": {
+      "Biology": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "Philosophy": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "izrazi + tekst Quien prepis",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "1 ex",
+        "completed": true,
+        "test": "yes"
+      },
+      "Geography": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Bulgarian": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "finish plan",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Physics": {
+        "type": "both",
+        "lessons": "1",
+        "homework": "graph",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "27.10": {
+    "Thursday": {
+      "Geography": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "exercises",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "resume",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "Philosophy": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "text + words",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Monday": {
+      "Biology": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "opr",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Tuesday": {
+      "Literature": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "essay",
+        "completed": true,
+        "test": "no"
+      },
+      "IT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Physics": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "03.11": {
+    "Tuesday": {
+      "Programming": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Literature": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "1-3 ex",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "WB p 22?",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Monday": {
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Biology": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Philosophy": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "text + words",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "ex",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Geography": {
+        "type": "both",
+        "lessons": "1",
+        "homework": "table",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "22.09": {},
+  "15.09": {},
+  "08.09": {},
+  "01.09": {},
+  "25.08": {},
+  "18.08": {},
+  "11.08": {},
+  "04.08": {},
+  "28.07": {},
+  "10.11": {
+    "Monday": {
+      "Biology": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "1 ex a)-g)",
+        "completed": true,
+        "test": "yes"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Tuesday": {
+      "IT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Literature": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "2 ex",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "banks?",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Philosophy": {
+        "type": "study",
+        "lessons": "questions; 30% test",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Geography": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "Bulgarian": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "hw",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "17.11": {
+    "Monday": {
+      "History": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      },
+      "Biology": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "primer",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Tuesday": {
+      "Programming": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Literature": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "essay + biography",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "zad in zadanie",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "essay",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "essay",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "vuprosi - 3 puti; rabota i dumi - 5 puti",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "1 zad",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "finish table",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "Geography": {
+        "type": "study",
+        "lessons": "1-2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "24.11": {
+    "Tuesday": {
+      "IT": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "diploma",
+        "completed": true,
+        "test": "no"
+      },
+      "Literature": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "plan",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "wb",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Geography": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "possible test",
+        "completed": false,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "resume",
+        "completed": false,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "possible test",
+        "completed": false,
+        "test": "no"
+      }
+    },
+    "Monday": {
+      "Biology": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "tridneven plan",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": false,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "01.12": {
+    "Monday": {
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Biology": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": false,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Tuesday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Literature": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Programming": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Geography": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "08.12": {
+    "Monday": {
+      "History": {
+        "type": "study",
+        "lessons": "razdel",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Biology": {
+        "type": "study",
+        "lessons": "1-2",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "some ex",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Tuesday": {
+      "IT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Literature": {
+        "type": "study",
+        "lessons": "onegin",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "wb",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "English": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "xmas prep",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "plan",
+        "completed": true,
+        "test": "no"
+      },
+      "Philosophy": {
+        "type": "both",
+        "lessons": "",
+        "homework": "essay",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "both",
+        "lessons": "",
+        "homework": "wb",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Math": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "2 zad 108 str 3 primera",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Geography": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "izpitvane",
+        "completed": false,
+        "test": "no"
+      },
+      "Physics": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "podtochka",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "15.12": {
+    "Thursday": {
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Geography": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": false,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "study",
+        "lessons": "gatanka + number",
+        "homework": "",
+        "completed": false,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Monday": {
+      "Biology": {
+        "type": "study",
+        "lessons": "1",
+        "homework": "",
+        "completed": false,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "2",
+        "homework": "",
+        "completed": false,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "yes"
+      },
+      "Class Period": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "подарък",
+        "completed": false,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Tuesday": {
+      "Programming": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "izpitvane",
+        "completed": false,
+        "test": "no"
+      },
+      "Literature": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "homework",
+        "lessons": "",
+        "homework": "izpitvane",
+        "completed": false,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "22.12": {
+    "Wednesday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Geography": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "29.12": {
+    "Monday": {
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Biology": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Class Period": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Tuesday": {
+      "Programming": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Literature": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Panchev": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Wednesday": {
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "ZBUT": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Spanish": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Basketball": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Thursday": {
+      "Math": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "English": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Bulgarian": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Geography": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    },
+    "Friday": {
+      "Physics": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "History": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      },
+      "Chemistry": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": true,
+        "test": "no"
+      }
+    }
+  },
+  "05.01": {
+    "Wednesday": {
+      "Philosophy": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      }
+    }
+  },
+  "12.01": {
+    "Monday": {
+      "Biology": {
+        "type": "study",
+        "lessons": "",
+        "homework": "",
+        "completed": false,
+        "test": "yes"
+      }
+    }
+  },
+  "19.01": {},
+  "26.01": {},
+  "02.02": {},
+  "09.02": {},
+  "16.02": {},
+  "23.02": {},
+  "02.03": {},
+  "09.03": {},
+  "16.03": {},
+  "23.03": {},
+  "30.03": {},
+  "06.04": {},
+  "13.04": {},
+  "20.04": {},
+  "27.04": {},
+  "04.05": {},
+  "11.05": {},
+  "18.05": {},
+  "25.05": {},
+  "01.06": {},
+  "08.06": {},
+  "15.06": {},
+  "22.06": {},
+  "29.06": {}
+}

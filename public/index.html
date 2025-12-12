@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weekly Planner</title>
+<style>
+:root {
+  --bg-light: #f5f6fa;
+  --day-bg-light: #e1e4eb;
+  --day-header-light: #d0d4e0;
+  --text-color-light: #000;
+  --bg-dark: #2b2c34;
+  --day-bg-dark: #3a3b45;
+  --day-header-dark: #4a4b55;
+  --text-color-dark: #eee;
+}
+
+body {
+  font-family: sans-serif;
+  margin:0;
+  padding:0;
+  background: var(--bg-light);
+  color: var(--text-color-light);
+  transition: all 0.3s;
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-color-dark);
+}
+
+header {
+  display:flex; justify-content: center; align-items: center; padding:10px; background:#007bff; color:white;
+  position: relative;
+  gap:5px;
+}
+
+#week-controls {
+  display:flex; justify-content:center; align-items:center; gap:5px;
+}
+
+#dark-toggle {
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+#week-controls button { background:white; color:#007bff; border:none; padding:5px 8px; cursor:pointer; border-radius:5px; }
+#week-label { font-weight:bold; color:white; margin:0 5px; }
+
+#week-container { display:flex; width:100%; margin-top:10px; align-items:flex-start; gap:5px; padding:0 10px; }
+.day-column {
+  display:flex; flex-direction: column; border-radius:10px;
+  background: var(--day-bg-light);
+  padding:5px; flex:1; transition: all 0.3s;
+}
+body.dark .day-column { background: var(--day-bg-dark); }
+
+.day-header {
+  text-align:center; padding:5px; font-weight:bold;
+  background: var(--day-header-light); border-radius:5px; margin-bottom:5px; transition: all 0.3s;
+}
+body.dark .day-header { background: var(--day-header-dark); }
+
+.class-rect { 
+  margin:4px 0; background:white; position:relative;
+  display:flex; flex-direction: column; align-items:center; justify-content:center;
+  border-radius:8px; overflow:hidden; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+body.dark .class-rect { background:#4a4b55; color:#eee; }
+.class-rect.completed { background:#d4edda; }
+body.dark .class-rect.completed { background:#3a5f3a; }
+
+.class-subject { font-weight:bold; color:#007bff; text-align:center; }
+body.dark .class-subject { color:#59bfff; }
+.class-homework { font-style: italic; color: #555; margin-top: 3px; font-size: 0.95em; text-align:center; }
+body.dark .class-homework { color:#ccc; }
+
+.btn-container { position:absolute; top:2px; right:2px; display:none; gap:2px; }
+.class-rect:hover .btn-container { display:flex; }
+.btn-container button { font-size:12px; padding:2px 4px; border:none; border-radius:3px; cursor:pointer; }
+.btn-edit { background:#007bff; color:white; }
+.btn-complete { background:#28a745; color:white; }
+
+/* Modal styles */
+#homework-modal { 
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+  background: rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:1000; 
+}
+#homework-modal .modal-content {
+  background:white; padding:20px; border-radius:10px; min-width:300px; max-width:400px;
+}
+body.dark #homework-modal .modal-content { background:#4a4b55; color:#eee; }
+
+#homework-modal label { display:block; margin-top:10px; }
+#homework-modal input[type="text"], #hw-type, #hw-test { width:100%; padding:5px; margin-top:3px; border-radius:5px; border:1px solid #ccc; }
+body.dark #homework-modal input[type="text"], body.dark #hw-type, body.dark #hw-test { background:#555; border:1px solid #888; color:#eee; }
+
+#homework-modal .modal-buttons { margin-top:15px; display:flex; justify-content:flex-end; gap:10px; }
+#homework-modal .modal-buttons button { padding:5px 10px; cursor:pointer; border:none; border-radius:5px; }
+#homework-modal .modal-buttons .cancel { background:#ccc; }
+#homework-modal .modal-buttons .save { background:#007bff; color:white; }
+</style>
+</head>
+<body>
+
+<header>
+  <div id="week-controls">
+    <button id="prev-week">&lt;</button>
+    <div id="week-label"></div>
+    <button id="next-week">&gt;</button>
+  </div>
+  <button id="dark-toggle">Dark Mode</button>
+</header>
+
+<div id="week-container"></div>
+
+<!-- Homework Modal -->
+<div id="homework-modal">
+  <div class="modal-content">
+    <h3 id="modal-subject">Homework</h3>
+    <label>
+      Type:
+      <select id="hw-type">
+        <option value="study">Study</option>
+        <option value="homework">Homework</option>
+        <option value="both">Both</option>
+      </select>
+    </label>
+    <label id="study-label">
+      Lessons to study:
+      <input type="text" id="hw-lessons" placeholder="Number of lessons">
+    </label>
+    <label id="homework-label">
+      Homework details:
+      <input type="text" id="hw-details" placeholder="Homework details">
+    </label>
+    <label>
+      Test?
+      <select id="hw-test">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+    </label>
+    <div class="modal-buttons">
+      <button class="cancel" id="modal-cancel">Cancel</button>
+      <button class="save" id="modal-save">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const DAYS = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
+let scheduleTemplate = {
+  "Monday":["History","History","Biology","Biology","Math","Math","Class Period","Basketball"],
+  "Tuesday":["IT/Programming","IT/Programming","Literature","Literature","","English"],
+  "Wednesday":["English","English","ZBUT","Philosophy","Spanish","Spanish","Basketball"],
+  "Thursday":["Math","Math","English","Bulgarian","Chemistry","Geography","Geography"],
+  "Friday":["Physics","Physics","History","History","Chemistry","Chemistry"]
+};
+
+let data = {}; 
+let currentMonday;
+const BASE_HEIGHT = 50;
+
+let modal = document.getElementById("homework-modal");
+let modalSubject = document.getElementById("modal-subject");
+let modalType = document.getElementById("hw-type");
+let modalLessons = document.getElementById("hw-lessons");
+let modalHomework = document.getElementById("hw-details");
+let modalTest = document.getElementById("hw-test");
+let modalCancel = document.getElementById("modal-cancel");
+let modalSave = document.getElementById("modal-save");
+let currentEdit = {};
+
+function updateModalFields(){
+  let val = modalType.value;
+  modalLessons.parentElement.style.display = (val==="study" || val==="both") ? "block":"none";
+  modalHomework.parentElement.style.display = (val==="homework" || val==="both") ? "block":"none";
+}
+modalType.onchange = updateModalFields;
+modalCancel.onclick = ()=>modal.style.display="none";
+
+async function loadData() {
+  try { const res = await fetch("/data"); data = await res.json(); } catch(e){ data={}; }
+}
+async function saveData() {
+  await fetch("/data", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(data)});
+}
+
+function getWeekDates(referenceDate=new Date()){
+  let day = referenceDate.getDay();
+  let monday = new Date(referenceDate);
+  monday.setDate(referenceDate.getDate() - ((day+6)%7));
+  let week = [];
+  for(let i=0;i<5;i++){
+    let d = new Date(monday);
+    d.setDate(monday.getDate()+i);
+    week.push(d);
+  }
+  return {monday, week};
+}
+
+function formatDate(date){ let dd = String(date.getDate()).padStart(2,'0'); let mm = String(date.getMonth()+1).padStart(2,'0'); return `${dd}.${mm}`; }
+
+function getTuesdayLesson(date){
+  let baseDate = new Date("2025-10-14");
+  let diffWeeks = Math.floor((date - baseDate)/ (7*24*60*60*1000));
+  return diffWeeks %2 ===0 ? "IT":"Programming";
+}
+
+function generateScheduleForWeek(mondayDate){
+  let weekSchedule = {};
+  for(let i=0;i<5;i++){
+    let dayName = DAYS[i];
+    weekSchedule[dayName] = [];
+    let template = scheduleTemplate[dayName];
+    if(dayName==="Tuesday"){
+      let tuesdayDate = new Date(mondayDate); tuesdayDate.setDate(mondayDate.getDate()+1);
+      let firstLesson = getTuesdayLesson(tuesdayDate);
+      weekSchedule[dayName] = [firstLesson, firstLesson,"Literature","Literature","Panchev","English"];
+    } else { weekSchedule[dayName] = [...template]; }
+  }
+  return weekSchedule;
+}
+
+function mergeClasses(classes){
+  let merged = [];
+  for(let cls of classes){
+    if(merged.length && merged[merged.length-1].subject===cls){
+      merged[merged.length-1].count++;
+    } else { merged.push({subject:cls,count:1}); }
+  }
+  return merged;
+}
+
+function openHomeworkModal(weekStr, day, subject){
+  currentEdit = {week: weekStr, day, subject};
+  modalSubject.textContent = subject;
+  let hwData = data[weekStr][day]?.[subject] || {type:"study", lessons:"", homework:"", completed:false, test:"no"};
+  modalType.value = hwData.type || "study";
+  modalLessons.value = hwData.lessons || "";
+  modalHomework.value = hwData.homework || "";
+  modalTest.value = hwData.test || "no";
+  updateModalFields();
+  modal.style.display="flex";
+}
+
+modalSave.onclick = ()=>{
+  let {week, day, subject} = currentEdit;
+  if(!data[week]) data[week]={};
+  if(!data[week][day]) data[week][day]={};
+  data[week][day][subject] = {
+    type: modalType.value,
+    lessons: modalLessons.value,
+    homework: modalHomework.value,
+    completed: data[week][day][subject]?.completed || false,
+    test: modalTest.value
+  };
+  modal.style.display="none";
+  renderWeek(currentMonday);
+  saveData();
+}
+
+function renderWeek(mondayDate){
+  const container = document.getElementById("week-container");
+  container.innerHTML="";
+  const weekLabel = document.getElementById("week-label");
+  let weekDates = getWeekDates(mondayDate).week;
+  weekLabel.textContent = `${weekDates[0].toDateString()} - ${weekDates[4].toDateString()}`;
+
+  let weekStr = formatDate(weekDates[0]); 
+  if(!data[weekStr]) data[weekStr]={};
+
+  let schedule = generateScheduleForWeek(mondayDate);
+
+  for(let i=0;i<5;i++){
+    let dayCol = document.createElement("div");
+    dayCol.className="day-column";
+    let header = document.createElement("div"); header.className="day-header";
+    header.textContent=`${DAYS[i]} (${formatDate(weekDates[i])})`;
+    dayCol.appendChild(header);
+
+    let mergedClasses = mergeClasses(schedule[DAYS[i]]);
+    for(let idx=0; idx<mergedClasses.length; idx++){
+      let cls = mergedClasses[idx];
+      let rect = document.createElement("div");
+      rect.className="class-rect";
+      rect.style.height = (cls.count * BASE_HEIGHT) + "px";
+
+      let subjectSpan = document.createElement("div");
+      subjectSpan.className="class-subject";
+      subjectSpan.textContent=cls.subject;
+      rect.appendChild(subjectSpan);
+
+      let hwData = data[weekStr][DAYS[i]]?.[cls.subject];
+      if(hwData){
+        let hwLines = [];
+        if(hwData.homework) hwLines.push("Homework: "+hwData.homework);
+        if(hwData.lessons) hwLines.push("Study: "+hwData.lessons+" lesson(s)");
+        if(hwLines.length){
+          let hwSpan = document.createElement("div");
+          hwSpan.className="class-homework";
+          hwSpan.innerHTML = hwLines.join("<br>");
+          rect.appendChild(hwSpan);
+        }
+
+        if(hwData.test==="yes"){
+          if(document.body.classList.contains("dark")) rect.style.background="#172C75";
+          else rect.style.background="#ADB2FF";
+        } else if(hwData.completed) rect.classList.add("completed");
+      }
+
+      let btnContainer = document.createElement("div"); btnContainer.className="btn-container";
+      let btnEdit = document.createElement("button"); btnEdit.textContent="✎"; btnEdit.className="btn-edit";
+      btnEdit.onclick = ()=>openHomeworkModal(weekStr, DAYS[i], cls.subject);
+      btnContainer.appendChild(btnEdit);
+
+      let btnComplete = document.createElement("button"); btnComplete.textContent="✓"; btnComplete.className="btn-complete";
+      btnComplete.onclick = ()=>{
+        if(!data[weekStr][DAYS[i]]) data[weekStr][DAYS[i]]={};
+        if(!data[weekStr][DAYS[i]][cls.subject]){
+          data[weekStr][DAYS[i]][cls.subject] = {type:"study", lessons:"", homework:"", completed:true, test:"no"};
+        } else { data[weekStr][DAYS[i]][cls.subject].completed = !data[weekStr][DAYS[i]][cls.subject].completed; }
+        renderWeek(currentMonday); saveData();
+      };
+      btnContainer.appendChild(btnComplete);
+
+      rect.appendChild(btnContainer);
+      dayCol.appendChild(rect);
+    }
+    container.appendChild(dayCol);
+  }
+}
+
+document.getElementById("prev-week").onclick = ()=>{
+  currentMonday.setDate(currentMonday.getDate()-7);
+  renderWeek(currentMonday);
+};
+document.getElementById("next-week").onclick = ()=>{
+  currentMonday.setDate(currentMonday.getDate()+7);
+  renderWeek(currentMonday);
+};
+
+// Dark mode persistence
+if(localStorage.getItem("darkMode")==="true") document.body.classList.add("dark");
+document.getElementById("dark-toggle").onclick = ()=>{
+  document.body.classList.toggle("dark");
+  localStorage.setItem("darkMode", document.body.classList.contains("dark"));
+};
+
+// Init with correct current/next week
+(async()=>{
+  await loadData();
+  let today = new Date();
+  let day = today.getDay();
+  if(day===0) today.setDate(today.getDate() + 1); // Sunday -> next Monday
+  else if(day===6) today.setDate(today.getDate() + 2); // Saturday -> next Monday
+  currentMonday = getWeekDates(today).monday;
+  renderWeek(currentMonday);
+})();
+</script>
+</body>
+</html>
